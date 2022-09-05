@@ -138,16 +138,16 @@ const Leftmenu = () => {
       </a>
     </h2>
     <hr style="margin-top :1px;  margin-bottom: 2px;"  />
-    <div id="flush-collapse-blog" class="accordion-collapse collapse"
+    <div id="flush-collapse-blog" class="accordion-collapse collapse p-o"
      aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushBlog">
-      <div class="accordion-body" style="padding: 25px 20px 22px 20px;">
-          <div id="blog-accordion-body" class="text-center" style="max-width: 1200px;"></div>
+      <div class="accordion-body p-0">
+          <div id="blog-accordion-body" class="text-center"></div>
        </div>
     </div>
   </div>
 </div>
 <!---[6] Elements-->
-<div class="accordion accordion-flush" id="accordionFlushElements">
+<div class="accordion accordion-flush mt-1" id="accordionFlushElements">
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
      <a href="#">

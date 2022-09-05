@@ -1,7 +1,5 @@
 import { header } from "../database.js";
-header.forEach((e) => {
-  console.log(e);
-});
+
 const leftmenuHomeBody = () => {
   header.forEach((e) => {
     document.getElementById("home-accordion-body").innerHTML += `
@@ -54,7 +52,7 @@ export const leftmenuPagesBody = () => {
       class="menu-item-page">
       <a href="https://demo.casethemes.net/organio/testimonials/"><span>Testimonials</span> 
       </a></li>
-      <li class="menu-item-page">
+      <ul class="menu-item-page">
       <div class="accordion accordion-flush" id="accordion-user-pages">
 <div class="accordion-item">
 <h2 class="accordion-header" id="flush-heading-pages">
@@ -72,41 +70,31 @@ aria-labelledby="flush-heading-pages" data-bs-parent="#accordion-user-pages">
 <div id="user-pages-accordion-body" class="">
 
 <ul class="sub-menu">
-<li 
-
-class="menu-item-page ">
+<li class="menu-item-page ">
 <a href="https://demo.casethemes.net/organio/sign-in/"><span>Sign In</span>
 </a></li><li  
 class="menu-item-page ">
 <a href="https://demo.casethemes.net/organio/sign-up/"><span>Sign Up</span>
 </a></li>
-
-  </ul>
-
+</ul>
 </div>
 </div>
 </div>
 </div>
 </div>
+</ul>
+<li 
+class="menu-item-page">
+<a href="https://demo.casethemes.net/organio/404-page"><span>404 Page</span>
+</a></li>
+<li 
+class="menu-item-page">
+<a href="https://demo.casethemes.net/organio/landing/">
+<span>Landing</span>
+</a>
 </li>
-        
-        
-        <li 
-        class="menu-item-page">
-        <a href="https://demo.casethemes.net/organio/404-page"><span>404 Page</span>
-        </a></li>
-        
-        
-        <li 
-        class="menu-item-page">
-        <a href="https://demo.casethemes.net/organio/landing/">
-        <span>Landing</span>
-        </a>
-        </li>
-        
-        </ul>
+</ul>
   `;
-
   return;
 };
 
@@ -189,13 +177,24 @@ Product Layout
 
 export const leftmenuPortfolioBody = () => {
   document.getElementById("portfolio-accordion-body").innerHTML = `
-  <ul class="sub-menu submenu-open"
-   style="display: block;">
-   <li 
-   class="menu-item-portfolio">
-   <a href="https://demo.casethemes.net/organio/portfolio-grid/">
-   <span>Portfolio Grid</span>
-  </a>
+
+   <ul class="menu-item-portfolio">
+<div class="accordion accordion-flush" id="accordion-portfolio-grid">
+<div class="accordion-item">
+<h2 class="accordion-header mb-2" id="flush-heading-portfolio-grid">
+<button style="color:#000000 !important; font-size:14px !important; line-height: 34px"
+ class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse"
+data-bs-target="#flush-collapse-portfolio-grid" aria-expanded="false" aria-controls="flush-collapse-portfolio-grid">
+<a href="#"> 
+    <span>Portfolio Grid</span>
+</a>
+</button>
+</h2>
+<div id="flush-collapse-portfolio-grid" class="accordion-collapse collapse"
+aria-labelledby="flush-heading-portfolio-grid" data-bs-parent="#accordion-portfolio-grid">
+<div class="accordion-body p-0 ps-3">
+<div id="portfolio-grid-accordion-body" class="">
+
    <ul class="sub-menu">
    <li  class="menu-item-portfolio">
    <a href="https://demo.casethemes.net/organio/portfolio-grid-2-columns/">
@@ -219,10 +218,28 @@ export const leftmenuPortfolioBody = () => {
        <span>Full Width No Space</span></a>
        </li>
        </ul>
-       </li><li
-       class="menu-item-portfolio">
-       <a href="https://demo.casethemes.net/organio/portfolio-masonry/"><span>Portfolio Masonry</span>
-       </a><ul class="sub-menu">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion accordion-flush" id="accordion-portfolio-masonry">
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-heading-portfolio-masonry">
+<button style="color:#000000 !important; font-size:14px !important; line-height: 34px"
+ class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse"
+data-bs-target="#flush-collapse-portfolio-masonry" aria-expanded="false" aria-controls="flush-collapse-portfolio-masonry">
+<a href="#"> 
+          <span>Portfolio Masonry</span>
+</a>
+</button>
+</h2>
+<div id="flush-collapse-portfolio-masonry" class="accordion-collapse collapse"
+aria-labelledby="flush-heading-portfolio-masonry" data-bs-parent="#accordion-portfolio-masonry">
+<div class="accordion-body p-0 ps-3">
+<div id="portfolio-masonry-accordion-body" class="">
+       <ul class="sub-menu">
        <li class="menu-item-portfolio">
        <a href="https://demo.casethemes.net/organio/portfolio-masonry/">
        <span>Portfolio Masonry 1
@@ -234,57 +251,170 @@ export const leftmenuPortfolioBody = () => {
         </li><li class="menu-item-portfolio">
         <a href="https://demo.casethemes.net/organio/portfolio-masonry-3/">
          <span>Portfolio Masonry 3</span>
-         
-         </span></a></li></ul></li><li class="menu-item-portfolio">
-         <a href="https://demo.casethemes.net/organio/portfolio-gallery/"><span>Portfolio Gallery</span>
-       </a></li><li 
-          class="menu-item-portfolio">
-          <a href="https://demo.casethemes.net/organio/portfolio/holding-fresh-radishes/">
-          <span>Portfolio Details</span>
-          </span>
-          </a>
-          </li>
-          </ul>
+         </span></a></li>
+         </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<li class="menu-item-portfolio">
+<a href="https://demo.casethemes.net/organio/portfolio-gallery/"><span>Portfolio Gallery</span>
+</a>
+</li>
+
+<li class="menu-item-portfolio">
+<a href="https://demo.casethemes.net/organio/portfolio/holding-fresh-radishes/">
+<span>Portfolio Details</span>
+</span>
+</a>
+</li>
+</ul>   
   `;
   return;
 };
 export const leftmenuBlogBody = () => {
   document.getElementById("blog-accordion-body").innerHTML = `
-  <ul class="sub-menu submenu-open" 
-  style="display: block;">
-  <li id="menu-item-2179"
-   class=" menu-item-2179">
+<ul class="menu-item-blog">
 
-   <a href="https://demo.casethemes.net/organio/blog-carousel/">
-   <span>Blog Carousel
-   </span></a></li>
-   <li id="menu-item-2180" class=" menu-item-has-children menu-item-2180"><a href="https://demo.casethemes.net/organio/blog/"><span>Blog List</span></a><ul class="sub-menu"><li id="menu-item-2183" class=" menu-item-2183">
-   <a href="https://demo.casethemes.net/organio/blog-list-left-sidebar/"><span>Left Sidebar</span></a></li><li id="menu-item-2182" class=" menu-item-2182"><a href="https://demo.casethemes.net/organio/blog-list-full-width/"><span>Full Width</span></a></li><li id="menu-item-2181" class=" menu-item-2181"><a href="https://demo.casethemes.net/organio/blog/"><span>Right Sidebar</span><span 
-   class="menu-line"></span><span class="menu-icon-plus"></span></a></li></ul><span
-    class="ct-menu-toggle caseicon-angle-arrow-down"></span></li><li id="menu-item-5120"
-     class=" menu-item-has-children menu-item-5120">
-     <a href="https://demo.casethemes.net/organio/blog-grid-3-columns/"><span>Blog Grid</span></a><ul class="sub-menu"><li id="menu-item-2189" class=" menu-item-2189"><a href="https://demo.casethemes.net/organio/blog-grid-2-columns/"><span>2 Columns</span><span class="menu-line"></span><span
-      class="menu-icon-plus"></span></a></li><li id="menu-item-2188" class=" menu-item-2188"><a href="https://demo.casethemes.net/organio/blog-grid-2-columns-left-sidebar/"><span>2 Columns : Left Sidebar</span></a></li><li id="menu-item-2187" class=" menu-item-2187"><a href="https://demo.casethemes.net/organio/blog-grid-2-columns-right-sidebar/"><span>2 Columns : Right Sidebar</span></a></li><li id="menu-item-5121"
-       class=" menu-item-5121"><a href="https://demo.casethemes.net/organio/blog-grid-3-columns/"><span>3 Columns</span></a></li><li id="menu-item-2185" class=" menu-item-2185"><a href="https://demo.casethemes.net/organio/blog-grid-4-columns-full-width/"><span>4 Columns : Full Width</span></a></li></ul></li><li id="menu-item-2192" class=""><a href="https://demo.casethemes.net/organio/blog-masonry/"><span>Blog Masonry</span></a></li><li id="menu-item-2193" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-2193"><a href="https://demo.casethemes.net/organio/we-advocate-swapping-screen-time-for-crafting/"><span>Blog Details</span></a><ul class="sub-menu"><li id="menu-item-2195" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2195"><a href="https://demo.casethemes.net/organio/zechsal-magnesium-flakes-especially-made/"><span>Left Sidebar</span></a></li><li id="menu-item-2196" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2196"><a href="https://demo.casethemes.net/organio/best-guide-to-shopping-for-organic-ingredients/"><span>Full Width</span></a></li><li id="menu-item-2194" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2194"><a href="https://demo.casethemes.net/organio/we-advocate-swapping-screen-time-for-crafting/"><span>Right Sidebar</span>
-       </a></li></ul></li></ul>`;
+
+<li class="menu-item-blog">
+<a href="https://demo.casethemes.net/organio/blog-carousel/">
+<span>Blog Carousel</span>
+</a>
+</li>
+
+
+<div class="accordion accordion-flush" id="accordion-blog-list">
+<div class="accordion-item">
+<h2 class="accordion-header mb-2" id="flush-heading-blog-list">
+<button style="color:#000000 !important; font-size:14px !important; line-height: 34px"
+class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse"
+data-bs-target="#flush-collapse-blog-list" aria-expanded="false" aria-controls="flush-collapse-blog-list">
+<a href="#"> 
+    <span>Blog List</span>
+</a>
+</button>
+</h2>
+<div id="flush-collapse-blog-list" class="accordion-collapse collapse"
+aria-labelledby="flush-heading-blog-list" data-bs-parent="#accordion-blog-list">
+<div class="accordion-body p-0 ps-3">
+<div id="blog-list-accordion-body" class="">
+<ul class="sub-menu">
+<li class="menu-item-blog">
+<a href="https://demo.casethemes.net/organio/blog-list-left-sidebar/">
+<span>Left Sidebar</span></a></li>
+<li class="menu-item-blog">
+<a href="https://demo.casethemes.net/organio/blog-list-full-width/">
+<span>Full Width</span>
+</a>
+</li>
+<li class="menu-item-blog"><a href="https://demo.casethemes.net/organio/blog/">
+<span>Right Sidebar</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="accordion accordion-flush" id="accordion-blog-grid">
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-heading-blog-grid">
+<button style="color:#000000 !important; font-size:14px !important; line-height: 34px"
+ class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse"
+data-bs-target="#flush-collapse-blog-grid" aria-expanded="false" aria-controls="flush-collapse-blog-grid">
+<a href="#"> 
+        <span>Blog Grid</span>
+</a>
+</button>
+</h2>
+<div id="flush-collapse-blog-grid" class="accordion-collapse collapse"
+aria-labelledby="flush-heading-blog-grid" data-bs-parent="#accordion-blog-grid">
+<div class="accordion-body p-0 ps-2">
+<div id="blog-grid-accordion-body" class="">
+<ul class="sub-menu"><li  class="menu-item-blog">
+<a href="https://demo.casethemes.net/organio/blog-grid-2-columns/"><span>2 Columns</span>
+</a></li><li class="menu-item-blog">
+<a href="https://demo.casethemes.net/organio/blog-grid-2-columns-left-sidebar/">
+<span>2 Columns : Left Sidebar</span></a></li><li class="menu-item-blog">
+<a href="https://demo.casethemes.net/organio/blog-grid-2-columns-right-sidebar/">
+<span>2 Columns : Right Sidebar</span></a></li><li 
+class="menu-item-blog"><a href="https://demo.casethemes.net/organio/blog-grid-3-columns/">
+<span>3 Columns</span></a></li><li class="menu-item-blog">
+<a href="https://demo.casethemes.net/organio/blog-grid-4-columns-full-width/">
+<span>4 Columns : Full Width</span></a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<li class="menu-item-blog">
+<a href="https://demo.casethemes.net/organio/blog-masonry/"><span>Blog Masonry</span></a>
+</li>
+
+
+<div class="accordion accordion-flush mb-2" id="accordion-blog-details">
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-heading-blog-details">
+<button style="color:#000000 !important; font-size:14px !important; line-height: 34px"
+ class="accordion-button py-0 collapsed" type="button" data-bs-toggle="collapse"
+data-bs-target="#flush-collapse-blog-details" aria-expanded="false" aria-controls="flush-collapse-blog-details">
+<a href="#"> 
+      <span>Blog Details</span>
+</a>
+</button>
+</h2>
+<div id="flush-collapse-blog-details" class="accordion-collapse collapse"
+aria-labelledby="flush-heading-blog-details" data-bs-parent="#accordion-blog-details">
+<div class="accordion-body p-0 ps-3">
+<div id="blog-details-accordion-body" class="">
+
+<ul class="sub-menu"><li 
+class="menu-item-blog">
+<a href="https://demo.casethemes.net/organio/zechsal-magnesium-flakes-especially-made/">
+<span>Left Sidebar</span></a></li>
+<li class="menu-item-blog"><a 
+href="https://demo.casethemes.net/organio/best-guide-to-shopping-for-organic-ingredients/">
+<span>Full Width</span></a></li>
+<li class="menu-item-blog">
+<a href="https://demo.casethemes.net/organio/we-advocate-swapping-screen-time-for-crafting/">
+<span>Right Sidebar</span>
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</ul> `;
   return;
 };
 export const leftmenuElementsBody = () => {
-  document.getElementById(
-    "elements-accordion-body"
-  ).innerHTML = `<div class="elementor-container elementor-column-gap-extended ">
-<div class="elementor-column elementor-col-25 elementor-top-column elementor-element 
-elementor-element-716a780" data-id="716a780" data-element_type="column"><div class="elementor-widget-wrap 
-elementor-element-populated"><div class="elementor-element elementor-element-5667426 elementor-widget
-elementor-widget-ct_menu_item" data-id="5667426" data-element_type="widget"
-data-widget_type="ct_menu_item.default"><div class="elementor-widget-container">
-<div class="ct-menu-item-wrap  style1"><ul class="ct-menu-item "><li>
-<a href="https://demo.casethemes.net/organio/elements/accordions-toggles/" 
-style="pointer-events: auto;"> <i aria-hidden="true" class="fas fa-bars"></i>
-<span>Accordions &amp; Toggles</span> </a></li><li>
+  document.getElementById("elements-accordion-body").innerHTML = `
+  <ul class="menu-item-elements">
+  <li>
+<a href="https://demo.casethemes.net/organio/elements/accordions-toggles/" style="pointer-events: auto;"> 
+<i aria-hidden="true" class="fas fa-bars"></i>
+<span>Accordions &amp; Toggles</span>
+ </a>
+</li>
+
+ <li>
 <a href="https://demo.casethemes.net/organio/elements/blog-carousel/"
-style="pointer-events: auto;"> <i aria-hidden="true" class="fas fa-newspaper"></i> 
-<span>Blog Carousel</span> </a></li><li> <a href="https://demo.casethemes.net/organio/elements/blog-grid/"
+style="pointer-events: auto;"> 
+<i aria-hidden="true" class="fas fa-newspaper"></i> 
+<span>Blog Carousel</span> </a>
+</li>
+<li> <a href="https://demo.casethemes.net/organio/elements/blog-grid/"
 style="pointer-events: auto;"> <i aria-hidden="true" class="far fa-newspaper"></i> <span>Blog Grid</span>
 </a></li><li> <a href="https://demo.casethemes.net/organio/elements/buttons/" 
 style="pointer-events: auto;"> <i aria-hidden="true" class="fas fa-cube"></i> <span>Buttons</span> 
@@ -293,14 +423,14 @@ style="pointer-events: auto;"> <i aria-hidden="true" class="fas fa-user-astronau
 <span>Clients Carousel</span> </a></li><li> 
 <a href="https://demo.casethemes.net/organio/elements/contact-form-7/"
 style="pointer-events: auto;"> <i aria-hidden="true" class="fab fa-wpforms"></i> 
-<span>Contact Form 7</span> </a></li></ul><div
-class="elementor-column elementor-col-25 elementor-top-column elementor-element
-elementor-element-0d136be" data-id="0d136be" data-element_type="column"><div 
-class="elementor-widget-wrap elementor-element-populated"><div
-class="elementor-element elementor-element-38d728a elementor-widget 
-elementor-widget-ct_menu_item" data-id="38d728a" data-element_type="widget"
-data-widget_type="ct_menu_item.default"><div class="elementor-widget-container">
-<div class="ct-menu-item-wrap  style1"><ul class="ct-menu-item "><li> 
+<span>Contact Form 7</span> </a></li>
+  
+  </ul>
+
+
+
+<ul class="menu-item-elements">
+<li> 
 <a href="https://demo.casethemes.net/organio/elements/countdown/"
 style="pointer-events: auto;">
 <i aria-hidden="true" class="fas fa-sort-numeric-down-alt"></i> 
@@ -317,16 +447,13 @@ style="pointer-events: auto;"> <i aria-hidden="true" class="fas fa-toolbox"></i>
 style="pointer-events: auto;"> <i aria-hidden="true" class="fas fa-list"></i> <span>Lists</span>
 </a></li><li> <a href="https://demo.casethemes.net/organio/elements/message-box/"
 style="pointer-events: auto;"> <i aria-hidden="true" class="fas fa-info-circle"></i>
-<span>Message Box</span> </a></li></ul><div 
-class="elementor-column elementor-col-25 elementor-top-column 
-elementor-element elementor-element-b641b3f" data-id="b641b3f"
-data-element_type="column"><div class="elementor-widget-wrap
-elementor-element-populated"><div
-class="elementor-element
-elementor-element-538f40a elementor-widget elementor-widget-ct_menu_item" 
-data-id="538f40a" data-element_type="widget" data-widget_type="ct_menu_item.default">
-<div class="elementor-widget-container"><div class="ct-menu-item-wrap 
-style1"><ul class="ct-menu-item "><li> 
+<span>Message Box</span> </a></li>
+</ul>
+  
+
+
+
+<ul class="menu-item-elements"><li> 
 <a href="https://demo.casethemes.net/organio/elements/portfolio-carousel/"
 style="pointer-events: auto;"> <i aria-hidden="true" class="fas fa-band-aid"></i>
 <span>Portfolio Carousel</span> </a></li><li>
@@ -345,13 +472,11 @@ style="pointer-events: auto;"> <i aria-hidden="true" class="fas fa-cog"></i>
 <span>Services Carousel</span> </a></li><li> 
 <a href="https://demo.casethemes.net/organio/elements/services-grid/"
 style="pointer-events: auto;"> <i aria-hidden="true" class="fas fa-cogs"></i> 
-<span>Services Grid</span> </a></li></ul><div 
-class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-a1a1b8b"
- data-id="a1a1b8b" data-element_type="column"><div class="elementor-widget-wrap elementor-element-populated">
- <div class="elementor-element elementor-element-6a1344b elementor-widget elementor-widget-ct_menu_item" 
- data-id="6a1344b" data-element_type="widget" data-widget_type="ct_menu_item.default">
- <div class="elementor-widget-container"><div class="ct-menu-item-wrap  style1"><ul class="ct-menu-item ">
- <li> <a href="https://demo.casethemes.net/organio/elements/team-carousel/" style="pointer-events: auto;">
+<span>Services Grid</span> </a></li></ul>
+
+
+<ul class="menu-item-elements">
+<li> <a href="https://demo.casethemes.net/organio/elements/team-carousel/" style="pointer-events: auto;">
 <i aria-hidden="true" class="fas fa-user-circle"></i> <span>Team Carousel</span> </a></li><li>
 <a href="https://demo.casethemes.net/organio/elements/team-grid/" style="pointer-events: auto;">
 <i aria-hidden="true" class="fas fa-users"></i> <span>Team Grid</span> </a></li><li>
@@ -362,8 +487,8 @@ class="elementor-column elementor-col-25 elementor-top-column elementor-element 
 <a href="https://demo.casethemes.net/organio/elements/video-buttons/" style="pointer-events: auto;"> 
 <i aria-hidden="true" class="far fa-play-circle"></i> <span>Video Buttons</span> </a></li><li> 
 <a href="https://demo.casethemes.net/organio/elements/counters/" style="pointer-events: auto;"> 
-<i aria-hidden="true" class="fas fa-sort-numeric-up"></i> <span>Counters</span> </a></li></ul></div>
-
+<i aria-hidden="true" class="fas fa-sort-numeric-up"></i> <span>Counters</span> </a></li>
+</ul>
       `;
   return;
 };

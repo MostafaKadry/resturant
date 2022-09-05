@@ -1,11 +1,7 @@
-import React from "react";
-
 const Content = () => {
-  return (
-    <div>
-      <img src="./background-img.jpg" alt="ss" />
-    </div>
-  );
+  return `<div class="w-100">
+      <img src="./imgs/background-img.jpg" alt="background" class="w-100" />
+    </div>`;
 };
 
 export default Content;

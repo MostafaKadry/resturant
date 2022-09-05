@@ -7,11 +7,16 @@ import leftmenuHomeBody, {
   leftmenuBlogBody,
   leftmenuElementsBody,
 } from "./components/leftmenuBody.js";
-document.getElementById("root").innerHTML = MyNav();
-document.getElementById("root").innerHTML += Leftmenu();
+import { Login } from "./components/login.js";
+import Content from "./components/content.js";
+let root = document.getElementById("root");
+root.innerHTML = MyNav();
+root.innerHTML += Leftmenu();
+root.innerHTML += Login();
 leftmenuHomeBody();
 leftmenuPagesBody();
 leftmenuShopBody();
 leftmenuPortfolioBody();
 leftmenuBlogBody();
 leftmenuElementsBody();
+root.innerHTML += Content();
