@@ -22,3 +22,27 @@ function toggle() {
     leftMenu.style.transform = `translateX(-110%)`;
   }
 }
+function showLogin() {
+  const loginBlackBack = document.getElementById("login-black-back");
+  loginBlackBack.classList.add("open");
+  return;
+}
+function hideLogin() {
+  const loginBlackBack = document.getElementById("login-black-back");
+  loginBlackBack.classList.remove("open");
+  return;
+}
+function showCart() {
+  const cartBlackBack = document.getElementById("cart-black-back");
+  const cartContainer = document.getElementById("cart-container");
+  cartBlackBack.classList.add("open-cart-back");
+  cartContainer.classList.add("open-cart");
+  return;
+}
+function hideCart() {
+  const cartBlackBack = document.getElementById("cart-black-back");
+  const cartContainer = document.getElementById("cart-container");
+  cartBlackBack.classList.remove("open-cart-back");
+  cartContainer.classList.remove("open-cart");
+  return;
+}

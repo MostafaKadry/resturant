@@ -23,7 +23,8 @@ function MyNav() {
     <div class="d-none show-navicons-720 m-auto text-end" style="justify-content: flex-end; width: 93%;">
       <span
         class="profile-toggler d-inline-block"
-  
+        id="profile-toggler"
+        onclick="showLogin()"
       >
         <img
           src="./imgs/user.png"
@@ -31,7 +32,7 @@ function MyNav() {
           class="profile-icon icon"
         />
       </span>
-      <span class="cart-toggler mx-2 d-inline-block">
+      <span class="cart-toggler mx-2 d-inline-block" onclick="showCart()">
         <img
           src="./imgs/shopping-cart.png"
           alt="Profile"

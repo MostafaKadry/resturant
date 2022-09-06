@@ -9,14 +9,19 @@ import leftmenuHomeBody, {
 } from "./components/leftmenuBody.js";
 import { Login } from "./components/login.js";
 import Content from "./components/content.js";
-let root = document.getElementById("root");
-root.innerHTML = MyNav();
-root.innerHTML += Leftmenu();
-root.innerHTML += Login();
-leftmenuHomeBody();
-leftmenuPagesBody();
-leftmenuShopBody();
-leftmenuPortfolioBody();
-leftmenuBlogBody();
-leftmenuElementsBody();
-root.innerHTML += Content();
+import Cart from "./components/cart.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  let root = document.getElementById("root");
+  root.innerHTML = MyNav();
+  root.innerHTML += Leftmenu();
+  root.innerHTML += Login();
+  root.innerHTML += Cart();
+  leftmenuHomeBody();
+  leftmenuPagesBody();
+  leftmenuShopBody();
+  leftmenuPortfolioBody();
+  leftmenuBlogBody();
+  leftmenuElementsBody();
+  root.innerHTML += Content();
+});
