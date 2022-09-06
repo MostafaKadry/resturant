@@ -123,6 +123,67 @@ function MyNav() {
       </div>
     </div>
   </div>
+
+  <div class="sub-nav hide-720">  
+    <div class="sub-nav-container">
+        <div class="sub-nav-accordion" id="accordionExample">
+        <i class="fa-solid fa-bars" style="display: flex; align-items: center;"></i>
+        <span>Browse Categories</span>
+        <i class="fa-solid fa-angle-down" style="display: flex; align-items: center;"></i>
+        <i class="fa-solid fa-angle-up d-none" style="align-items: center;"></i>
+    </div>
+      <div class="sub-nav-search-container">
+      <form class="sub-nav-search-form w-100" role="search">
+      <div class="sub-nav-select">
+      <span class="select-category-default">Select a Category</span>
+      <ul class="select-category-list"><li data-value="" class="option selected focus">Select a Category</li><li data-value="organic" class="option">Organic</li><li data-value="bread-bakery" class="option">Bread &amp; Bakery</li><li data-value="coffee" class="option">Coffee</li><li data-value="discount-weekly" class="option">Discount Weekly</li><li data-value="dry-food" class="option">Dry Food</li><li data-value="food" class="option">Food</li><li data-value="food-drinks" class="option">Food Drinks</li><li data-value="fresh-fish" class="option">Fresh Fish</li><li data-value="fresh-fruits" class="option">Fresh Fruits</li><li data-value="fresh-meat" class="option">Fresh Meat</li><li data-value="fresh-nuts" class="option">Fresh Nuts</li><li data-value="grocery-frozen" class="option">Grocery &amp; Frozen</li><li data-value="millk-cream" class="option">Millk Cream</li><li data-value="nature" class="option">Nature</li><li data-value="recipies" class="option">Recipies</li><li data-value="soya-dairy-free" class="option">Soya &amp; Dairy Free</li><li data-value="vegetable" class="option">Vegetable</li></ul>
+      </div>
+      <i class="fa-solid fa-angle-down" style="display: flex; align-items: center; background: #ffffff; color: #9b9b9b; position: absolute; left: 27%;"></i>
+        <input class="" type="search" placeholder="Search Products..." aria-label="Search">
+        <button class="btn select-search-btn" type="submit">
+        <img src="./imgs/light-search.png" alt="search-icon" class="icon" />
+        </button>
+      </form>
+      </div>
+      <div class="sub-nav-icons">
+      <span
+        class="sub-nav-heart-icon-container"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling"
+        onclick=""
+      >
+      <a class="" href="https://demo.casethemes.net/organio/wishlist/">
+        <img src="./imgs/light-heart.png" class="profile-icon icon" alt="heart"/> 
+      </a>
+      </span>
+
+      <span class="sub-nav-cart-icon-container" onclick="showCart()" style="margin-left: 20px !important;">
+        <img
+          src="./imgs/light-cart.png"
+          alt="Profile"
+          class="profile-icon icon"
+        />
+      </span>
+
+               
+      <span
+        class="sub-nav-profile-icon-container"
+        id="profile-toggler"
+        onclick="showLogin()"
+      >
+        <img
+          src="./imgs/light-user.png"
+          alt="Profile"
+          class="profile-icon icon"
+        />
+      </span>
+    </div>
+   </div>
+
+  </div>
+
+
 </nav>
 `;
 }

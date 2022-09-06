@@ -16,20 +16,22 @@ function toggle() {
     hr2.style.opacity = 1;
     hr3.style.transform = " rotate(0deg)";
     hr1.style.transform = " rotate(0deg)";
-    // hr3.style.transformOrigin = "";
-    // hr1.style.transformOrigin = "";
     isToggled = false;
     leftMenu.style.transform = `translateX(-110%)`;
   }
 }
 function showLogin() {
   const loginBlackBack = document.getElementById("login-black-back");
+  const loginContainr = document.getElementById("login-container");
   loginBlackBack.classList.add("open");
+  loginContainr.classList.add("open-login-container");
   return;
 }
 function hideLogin() {
   const loginBlackBack = document.getElementById("login-black-back");
+  const loginContainr = document.getElementById("login-container");
   loginBlackBack.classList.remove("open");
+  loginContainr.classList.remove("open-login-container");
   return;
 }
 function showCart() {

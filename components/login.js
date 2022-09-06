@@ -5,7 +5,7 @@ export const Login = () => {
         <div class="login-close" id="login-close-black-back" onclick="hideLogin()">
             <i class="fa-solid fa-xmark fa-xmark-login"></i>
         </div>
-     <div class="login-container">
+     <div class="login-container" id="login-container">
         <div class="login-body">
         <h3 class="login-heading">Log in to Your Account</h3>
                        

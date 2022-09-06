@@ -26,6 +26,7 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .fa-xmark-login {
@@ -41,7 +42,12 @@
     width: 100%;
     padding: 30px 15px;
     transform: translate(-50%, -50%);
+    display: none;
 
+}
+
+.open-login-container {
+    display: block !important;
 }
 
 .login-body {

@@ -7,11 +7,13 @@
 .rotate-plus {
     display: inline-block;
     transition: transform 0.3s;
+    /* transform-origin: center left;
+    transform: rotate(45deg); */
 
 }
 
 .nav-item:hover .rotate-plus {
-    transform-origin: center left;
+    /* transform-origin: center left; */
     transform: rotate(45deg);
 }
 
@@ -31,8 +33,7 @@
 }
 
 .icon {
-    width: 18px;
-    /* height: 36px; */
+    width: 26px;
 }
 
 .hr {
@@ -74,6 +75,8 @@
     font-size: 16px !important;
     line-height: normal;
     color: #444 !important;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -249,6 +252,173 @@ li {
     padding: 0;
     text-align: left;
     color: #444 !important;
+}
+
+
+/* sub nav */
+.sub-nav {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 36px;
+
+}
+
+.sub-nav-container {
+    max-width: 1170px;
+    background-color: #4C8426;
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    position: absolute;
+    border-radius: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sub-nav-menu-container {
+    line-height: 50px;
+    background-color: #fff;
+    min-width: 260px;
+    border-radius: 25px;
+    padding-left: 60px;
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a472f;
+}
+
+.sub-nav-accordion {
+    line-height: 50px;
+    background-color: #fff;
+    min-width: 260px;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a472f;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.sub-nav-search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 520px;
+}
+
+.sub-nav-search-container {
+    width: 520px !important;
+}
+
+.sub-nav-search-form input {
+    border: none;
+    height: 50px;
+    color: rgba(149, 149, 149, .76);
+    width: 100%;
+    font-size: 13px;
+    border-radius: 0 50px 50px 0;
+    outline: none;
+}
+
+.sub-nav-select {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    font-size: 13px;
+    color: #959595;
+    height: 50px;
+    padding: 0 30px 0 22px;
+    min-width: 168px;
+    border-radius: 50px 0 0 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.select-category-default {}
+
+.select-category-list {
+    overflow-y: scroll;
+    max-height: 250px;
+    overflow: auto;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 12%);
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transform-origin: 50% 0;
+    transform: scale(.75)translateY(-21px);
+    transition: all .2s cubic-bezier(.5, 0, 0, 1.25), opacity .15s ease-out;
+}
+
+.select-search-btn {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 60px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 0 50px 50px 0;
+    font-size: 27px;
+    background-color: #86be16;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-search-btn:hover {
+    background-color: #76a713;
+}
+
+.sub-nav-icons {
+    display: flex;
+    align-items: center;
+    background-color: #4C8426;
+    font-weight: 400;
+}
+
+.sub-nav-heart-icon-container,
+.sub-nav-cart-icon-container,
+.sub-nav-profile-icon-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .1);
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.sub-nav-heart-icon-container i {
+    font-weight: 400;
+}
+
+@media screen and (min-width: 993px) {
+    .hide-993 {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width:992px) {

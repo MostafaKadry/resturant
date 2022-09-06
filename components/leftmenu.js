@@ -1,6 +1,6 @@
 const Leftmenu = () => {
   return `
-  <div class="left-menu" id="left-menu" style="max-width: 1200px;">
+  <div class="left-menu hide-993" id="left-menu" style="max-width: 1200px;">
   <div class="left-menu-container w-100">
     <div class="left-menu-inner-container">
       <img
@@ -41,7 +41,7 @@ const Leftmenu = () => {
             background-color: #ffffff;
           "
         >
-          <img src="./imgs/search.png" alt="search-icon" class="icon" />
+          <img src="./imgs/search.png" alt="search-icon" class="icon" style="width:18px !important;"/>
         </div>
       </div>
 
