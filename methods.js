@@ -48,3 +48,52 @@ function hideCart() {
   cartContainer.classList.remove("open-cart");
   return;
 }
+
+function openSelectCategory() {
+  const selectList = document.getElementById("select-category-list");
+  selectList.classList.add("open-select-category-list");
+  return;
+}
+function hideSelectCategory() {
+  const selectList = document.getElementById("select-category-list");
+  selectList.classList.remove("open-select-category-list");
+  return;
+}
+let isSelectToggled = false;
+function toggleSelectCategory() {
+  if (!isSelectToggled) {
+    isSelectToggled = true;
+    openSelectCategory();
+    return;
+  } else {
+    isSelectToggled = false;
+    hideSelectCategory();
+  }
+}
+
+function openBrowseCategory() {
+  const BrowseCategory = document.getElementById("sub-nav-accordion-sub-menu");
+  BrowseCategory.classList.add("open-sub-nav-accordion-sub-menu");
+  return;
+}
+function hideBrowseCategory() {
+  const BrowseCategory = document.getElementById("sub-nav-accordion-sub-menu");
+  BrowseCategory.classList.remove("open-sub-nav-accordion-sub-menu");
+  return;
+}
+let isBrowseToggled = false;
+function toggleBrowseCategory() {
+  if (!isBrowseToggled) {
+    isBrowseToggled = true;
+    document.getElementById("accordionExample").style.borderRadius =
+      "25px 25px 0px 0px";
+    openBrowseCategory();
+
+    return;
+  } else {
+    isBrowseToggled = false;
+    document.getElementById("accordionExample").style.borderRadius = "25px";
+    hideBrowseCategory();
+    return;
+  }
+}

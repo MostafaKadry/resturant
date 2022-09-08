@@ -127,22 +127,111 @@ function MyNav() {
   <div class="sub-nav hide-720">  
     <div class="sub-nav-container">
         <div class="sub-nav-accordion" id="accordionExample">
+
+        <div class="browse-category-toggler-container" onclick="toggleBrowseCategory()">
         <i class="fa-solid fa-bars" style="display: flex; align-items: center;"></i>
         <span>Browse Categories</span>
         <i class="fa-solid fa-angle-down" style="display: flex; align-items: center;"></i>
         <i class="fa-solid fa-angle-up d-none" style="align-items: center;"></i>
+        </div>
+
+        <ul class="list-browse-group sub-nav-accordion-sub-menu" id="sub-nav-accordion-sub-menu">
+        
+        <div class="list-browse-item">
+        <a href="https://demo.casethemes.net/organio/product-category/grocery-frozen/">
+        <img src="./imgs/cardboard.png" class="icon" /> 
+        <span>Grocery &amp; Frozen</span>
+        </a>
+        </div>
+
+
+     <div class="list-browse-item">
+
+         <img src="./imgs/cherry.png"  class="icon" />
+         <span>Fresh Fruits</span>
     </div>
+
+
+
+        
+        <div class="list-browse-item">
+        <a href="https://demo.casethemes.net/organio/product-category/fresh-fish/">
+         <img src="./imgs/fish.png"  class="icon" />
+        Fresh Fish
+        </a>
+        </div>
+       
+
+        <div class="list-browse-item">
+       <a href="https://demo.casethemes.net/organio/product-category/fresh-nuts/">
+         <img src="./imgs/coconut.png"  class="icon" />
+        Fresh Nuts
+        </a>
+        </div>
+        
+        <div class="list-browse-item">
+        <a href="https://demo.casethemes.net/organio/product-category/fresh-meat/">
+        <img src="./imgs/chicken-leg.png"  class="icon" />
+        Fresh Meat
+        </a>
+        </div>
+       
+        <div class="list-browse-item">
+        <a href="https://demo.casethemes.net/organio/product-category/bread-bakery/">
+        <img src="./imgs/fruits.png"  class="icon" />
+        Bread &amp; Bakery
+        </a>
+        </div>
+
+     
+      <div class="list-browse-item">
+          <a href="https://demo.casethemes.net/organio/product-category/vegetable/">    
+          <img src="./imgs/grocery.png"  class="icon" />
+          Vegetable
+          </a>
+          </div>
+          
+        <div class="list-browse-item">
+                <img src="./imgs/leaf.png"  class="icon" /> 
+              <span>Organic</span>
+      </div>
+
+                 <div class="list-browse-item">
+      <a href="https://demo.casethemes.net/organio/product-category/food/">
+         <img src="./imgs/carrot.png"  class="icon" />
+        Food
+        </a>
+        </div>
+
+        <div class="list-browse-item">
+          <a href="https://demo.casethemes.net/organio/product-category/nature/">
+         <img src="./imgs/orange-juice.png"  class="icon" />
+         Nature
+          </a>
+        </div>
+                <div class="list-browse-item">
+       <a href="https://demo.casethemes.net/organio/product-category/recipies/">
+         <img src="./imgs/broccoli-juice.png"  class="icon" />
+         Recipies
+          </a>
+        </div>
+
+    </ul>
+    </div>
+
+
       <div class="sub-nav-search-container">
       <form class="sub-nav-search-form w-100" role="search">
-      <div class="sub-nav-select">
+      <div class="sub-nav-select" onclick="toggleSelectCategory()">
       <span class="select-category-default">Select a Category</span>
-      <ul class="select-category-list"><li data-value="" class="option selected focus">Select a Category</li><li data-value="organic" class="option">Organic</li><li data-value="bread-bakery" class="option">Bread &amp; Bakery</li><li data-value="coffee" class="option">Coffee</li><li data-value="discount-weekly" class="option">Discount Weekly</li><li data-value="dry-food" class="option">Dry Food</li><li data-value="food" class="option">Food</li><li data-value="food-drinks" class="option">Food Drinks</li><li data-value="fresh-fish" class="option">Fresh Fish</li><li data-value="fresh-fruits" class="option">Fresh Fruits</li><li data-value="fresh-meat" class="option">Fresh Meat</li><li data-value="fresh-nuts" class="option">Fresh Nuts</li><li data-value="grocery-frozen" class="option">Grocery &amp; Frozen</li><li data-value="millk-cream" class="option">Millk Cream</li><li data-value="nature" class="option">Nature</li><li data-value="recipies" class="option">Recipies</li><li data-value="soya-dairy-free" class="option">Soya &amp; Dairy Free</li><li data-value="vegetable" class="option">Vegetable</li></ul>
+      
       </div>
       <i class="fa-solid fa-angle-down" style="display: flex; align-items: center; background: #ffffff; color: #9b9b9b; position: absolute; left: 27%;"></i>
         <input class="" type="search" placeholder="Search Products..." aria-label="Search">
         <button class="btn select-search-btn" type="submit">
         <img src="./imgs/light-search.png" alt="search-icon" class="icon" />
         </button>
+        <ul class="select-category-list" id="select-category-list"><li data-value="" class="option selected focus">Select a Category</li><li data-value="organic" class="option">Organic</li><li data-value="bread-bakery" class="option">Bread &amp; Bakery</li><li data-value="coffee" class="option">Coffee</li><li data-value="discount-weekly" class="option">Discount Weekly</li><li data-value="dry-food" class="option">Dry Food</li><li data-value="food" class="option">Food</li><li data-value="food-drinks" class="option">Food Drinks</li><li data-value="fresh-fish" class="option">Fresh Fish</li><li data-value="fresh-fruits" class="option">Fresh Fruits</li><li data-value="fresh-meat" class="option">Fresh Meat</li><li data-value="fresh-nuts" class="option">Fresh Nuts</li><li data-value="grocery-frozen" class="option">Grocery &amp; Frozen</li><li data-value="millk-cream" class="option">Millk Cream</li><li data-value="nature" class="option">Nature</li><li data-value="recipies" class="option">Recipies</li><li data-value="soya-dairy-free" class="option">Soya &amp; Dairy Free</li><li data-value="vegetable" class="option">Vegetable</li></ul>
       </form>
       </div>
       <div class="sub-nav-icons">
