@@ -11,4 +11,5 @@ body,
     overflow-x: hidden;
     font-weight: 700;
     letter-spacing: 0;
+    overflow: hidden;
 }
