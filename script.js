@@ -10,7 +10,6 @@ import leftmenuHomeBody, {
 import { Login } from "./components/login.js";
 import Content from "./components/content.js";
 import Cart from "./components/cart.js";
-
 document.addEventListener("DOMContentLoaded", () => {
   let root = document.getElementById("root");
   root.innerHTML = MyNav();

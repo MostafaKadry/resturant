@@ -1,0 +1,28 @@
+.background-imgs {
+    position: relative;
+
+}
+
+.bg-redio-btns {
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(50%)
+}
+
+.background-img {
+    display: none;
+    z-index: -1;
+    position: relative;
+}
+
+.open-background-img {
+    display: block;
+}
+
+@media only screen and (max-width:992px) {
+    .hide-992 {
+        display: none !important;
+    }
+
+}

@@ -97,3 +97,37 @@ function toggleBrowseCategory() {
     return;
   }
 }
+
+function changeBgImg(i) {
+  const allImages = document.querySelectorAll(".background-img");
+  for (const img of allImages) {
+    img.classList.remove("open-background-img");
+  }
+  i.classList.add("open-background-img");
+  return;
+}
+let i = 1;
+function setBgImg() {
+  const allImages = document.querySelectorAll(".background-img");
+  if (i === 0) {
+    changeBgImg(allImages[i]);
+    i++;
+  } else if (i === 1) {
+    changeBgImg(allImages[i]);
+    i++;
+  } else if (i === 2) {
+    changeBgImg(allImages[i]);
+    i = 0;
+  }
+  return;
+}
+function selectBgImg(id = 0) {
+  const allImages = document.querySelectorAll(".background-img");
+  changeBgImg(allImages[id]);
+  if (id == 2) {
+    i = 0;
+  } else {
+    i = id++;
+  }
+  return;
+}
